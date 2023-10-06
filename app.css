@@ -1,0 +1,447 @@
+/* General body styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Stylings for header elements */
+h1,h2 {
+  font-weight: 100;
+  margin: 0;
+}
+
+/* Divider styling */
+.divider {
+  height: 1px;
+  background-color: whitesmoke; 
+  margin: 30px 0; 
+}
+
+/* App container styling */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Content wrapper styling for side navigation and main content */
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Top navigation styling */
+.top-nav {
+  background-color: #2564CF;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the material icons within the top navigation */
+.top-nav .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 48;
+  color:white;
+  margin-right: 20px;
+}
+
+/* Left navigation styling */
+.left-nav {
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-right: 3px;
+  padding-top: 20px;
+  padding-left: 0;
+  padding-right: 0px;
+  background-color: white;
+  color: black;
+  box-shadow: 10px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for links in left navigation */
+.left-nav a {
+  display: flex;
+  width: 100%;        
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+  transition: 0.3s;
+  margin: 0;
+  box-sizing: border-box;  
+  align-items: center;
+  text-decoration: none; 
+  gap: 15px;
+}
+
+/* Hover effect for links in left navigation */
+.left-nav a:hover {
+  background: whitesmoke;
+  color: black;
+}
+
+/* Styling for the material icons within the left navigation */
+.left-nav.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 48;
+  color: black;
+  line-height: 1;
+}
+
+/* Search input styling in top navigation */
+.search-input {
+  border: none;
+  padding: 5px;
+  outline: none;
+  margin-left: auto;  
+  margin-right: auto;
+  width: 100%;
+}
+
+/* Label styling in top navigation */
+.top-nav label {
+  font-size: 16px;
+  color: white;
+}
+
+/* Main container for the tasks and other features */
+.main-container {
+  width: 2000px;
+  background: #fff;
+  padding: 20px;
+}
+
+/* My Day section header styling */
+.myDay-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+/* My Day section h1 styling */
+
+.myDay-section h1 .myDay-text {
+  margin-left: 10px; 
+}
+
+/* Styling for the material icons within the My Day section */
+
+.myDay-section .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 100;
+  color:black;
+  vertical-align: middle;
+}
+
+/* Date display under My Day header */
+#currentDate {
+  margin-top: 5px;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+/* Styling for the header containing buttons and the My Day title */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Container for the sort, group, and suggestion buttons in the header */
+.header-buttons {
+  display: flex;
+  gap: 10px;
+  font-size: 15px;
+}
+
+/* Button styling inside the header-buttons container */
+.header-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: white; 
+  border: none;          
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect for buttons inside the header-buttons container */
+.header-buttons button:hover {
+  background-color: whitesmoke
+}
+
+/* Task container styling */
+.task-wrapper {
+  display: flex;
+  flex-direction: column; 
+  flex-grow: 1; 
+}
+
+/* Label for tasks styling */
+.task-label {
+  font-size: 0.7em;
+  color: grey;
+  margin-top: 3px;
+}
+
+/* Header styling for the section displaying completed tasks. */
+.completed-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+/* Styling for the main section containing completed tasks. */
+.completed-section {
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Styling for the completed-header 'h2' and 'button' within the completed section. */
+.completed-header button,
+.completed-header h2 {
+  display: inline;
+  font-size: 1.5em;
+}
+
+/* Styling for the "add task" input and button container. */
+.add-task {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 12px;
+  margin-top: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Initially hidden options for tasks (like edit, delete). */
+.task-options {
+  display: none; 
+  background-color: #FAF9F8;
+  margin-left: 0px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset styling for buttons and images within the task options to ensure consistency. */
+#taskOptions button, #taskOptions img {
+  background: none !important;
+  background-color: transparent !important;
+}
+
+/* Styling for individual option buttons (like edit, delete). */
+.option-button {
+  border: none;
+  margin-left: 5px; 
+  cursor: pointer;
+  padding: 8px;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect for option buttons. */
+.option-button:hover {
+  background-color: whitesmoke;
+}
+
+/* Styling for images/icons within the option buttons. */
+.option-button img {
+  height: 20px;
+  width: 20px;
+}
+
+/* Custom styling for the task checkbox. */
+#taskCheckbox {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  appearance: none;
+  border: 1px solid #007bff;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Styling for the task input field. */
+#taskInput {
+  flex-grow: 1;
+  border: none;
+  padding: 3px;
+  font-size: 12px;
+  outline: none;
+  width: 100%;
+}
+
+/* Container for each task, allowing for vertical layout of task content. */
+.task-wrapper {
+  display: flex;
+  flex-direction: column; 
+  flex-grow: 1; 
+}
+
+/* Styling for task label or description. */
+.task-label {
+  font-size: 0.7em;
+  color: grey;
+  margin-top: 3px;
+}
+
+/* Reset list styles for a cleaner appearance. */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling for individual list items (tasks). */
+li {
+  display: flex;
+  align-items: center; 
+  padding: 10px;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom styling for checkboxes within the list items. */
+li input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  appearance: none;
+  border: 1px solid #007bff;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Appearance for checked state of the custom checkbox. */
+li input[type="checkbox"]:checked {
+  background: #007bff;
+  position: relative;
+}
+
+/* Additional styling for checked checkbox to show a checkmark. */
+li input[type="checkbox"]:checked::after {
+  content: '\2713';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Strikethrough effect for completed tasks, excluding any starred item. */
+li.done span:not(.star) {
+  text-decoration: line-through;
+}
+
+/* Button styling to toggle/hide the completed tasks. */
+.star {
+  margin-left: 10px; 
+  cursor: pointer;
+  padding: 0 5px;
+  display: inline-block;
+  font-size: 16px;
+  color: #007bff;
+}
+
+/* Button styling to toggle/hide the completed tasks. */
+#toggleCompleted {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 10px; 
+  outline: none; 
+}
+
+
+/* For responsive behavior */
+
+/* For desktop screens >= 1024px */
+
+@media (min-width: 1024px) {
+  .left-nav {
+      display: block;  
+  }
+
+  .search-input {
+      width: 300px; 
+  }
+}
+
+/* For tablet screens >= 768px and < 1024px*/
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .header-buttons {
+    display: none; 
+  }
+
+  .left-nav {
+      display: none;  
+  }
+
+  .search-input {
+      width: 100px;  
+  }
+
+  #showLeftNav {
+    display: block;
+
+
+}
+}
+
+/* For mobile screens < 768px */
+@media (max-width: 767px) {
+
+  .header-buttons {
+    display: none; 
+  }
+
+  .left-nav {
+    display: none;
+  }
+
+  .search-input {
+    width: 30px;
+  }
+
+  #showLeftNav {
+    display: block;
+  }
+
+}
+
+
+#showLeftNav {
+    display: none; 
+}
